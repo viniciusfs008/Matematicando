@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>Matematicando</title>
+		<link rel="icon" href="img/matematica.png"/>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+	</head>
+
+	<body>
+
+<!-- Cabeçalho -->
+
+		<header>
+			<div class="cabecalho">
+				<img src="img/matematica.png" class="img">
+				<h1 class="logo">Matematicando</h1>
+			</div>
+		</header>
+
+		<nav class="menu">
+			<ul class="menu-item">
+				<li class="item"><a class="link" href="Index.html">Home</a></li>
+				<li class="item"><a class="link" href="Tetraedro.html">Tetraedro</a></li>
+				<li class="item"><a class="link" href="Cilindro.html">Cilindro</a></li>
+			</ul>
+		</nav>
+
+<!-- Conteudo da Esquerda -->
+
+		<div class="conteudoE">
+			
+			<img src="img/tet.png" class="img3N">
+
+		</div>
+
+
+<!-- Conteudo da Direita -->
+
+		<div class="conteudoD">
+			
+			<div><h3>A = &radic;3 * l²</h3></div>
+
+		</div>
+
+<!-- Conteudo do Centro -->
+
+		<div class="conteudo">
+
+			<form class="cen">
+
+				<h2>Calcular Área do Tetraedro:</h2>
+
+				<h4>Aresta:</h4>
+
+				<input  class="per" type="text" name="aresta">
+				<br><br>
+
+				<input class="but" type="button" value="Calcular" onclick="calculaQ(this.form)">
+				<input class="but" type="reset" value="Limpar" name="">
+				<br><br>
+
+				<h4>Resultado:</h4>
+				<input class="res" type="text" name="ResultadoQ">
+
+			</form>
+
+		</div>
+
+		<script type="text/javascript">
+			
+			function calculaQ(form){
+				var aresta = eval(form.aresta.value);
+				var result = eval(Math.sqrt(3) * (aresta*aresta));
+				form.ResultadoQ.value=result;
+				return areaquadrado;
+			}
+
+		</script>
+
+<!-- Rodapé -->
+
+		<footer>
+			<div class="rodape">
+				<span>&copy; 2019 - <strong>Matematicando</strong></span>
+			</div>
+		</footer>
+
+	</body>
+
+</html>

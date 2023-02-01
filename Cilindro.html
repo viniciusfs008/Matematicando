@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>Matematicando</title>
+		<link rel="icon" href="img/matematica.png"/>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+	</head>
+
+	<body>
+
+<!-- Cabeçalho -->
+
+		<header>
+			<div class="cabecalho">
+				<img src="img/matematica.png" class="img">
+				<h1 class="logo">Matematicando</h1>
+			</div>
+		</header>
+
+		<nav class="menu">
+			<ul class="menu-item">
+				<li class="item"><a class="link" href="Index.html">Home</a></li>
+				<li class="item"><a class="link" href="Tetraedro.html">Tetraedro</a></li>
+				<li class="item"><a class="link" href="Cilindro.html">Cilindro</a></li>
+			</ul>
+		</nav>
+
+<!-- Conteudo da Esquerda -->
+			
+			<img src="img/cil.png" class="img2N">
+
+
+<!-- Conteudo da Direita -->
+
+		<div class="conteudoD">
+			
+			<div><h3>A = 2 * &pi; * r *(r + h)</h3></div>
+
+		</div>
+
+<!-- Conteudo da Centro -->
+
+		<div class="conteudo">
+
+			<form class="cen">
+
+				<h2>Calcular Área do Cilindro:</h2>
+
+				<h4>Raio:</h4>
+				<input  class="per" type="text" name="raio">
+
+				<h4>Altura:</h4>
+				<input  class="per" type="text" name="altura">
+				<br><br>
+
+				<input class="but" type="button" value="Calcular" onclick="calculaQ(this.form)">
+				<input class="but" type="reset" value="Limpar">
+				<br><br>
+
+				<h4>Resultado:</h4>
+				<input class="res" type="text" name="ResultadoQ">
+
+			</form>
+
+		</div>
+
+		<script type="text/javascript">
+			
+			function calculaQ(form){
+				var raio=eval(form.raio.value);
+				var altura=eval(form.altura.value);
+				var res = (2 * Math.PI * raio * (raio+altura));
+				form.ResultadoQ.value=res;
+				return res;
+			}
+
+		</script>
+
+<!-- Rodapé -->
+
+		<footer>
+			<div class="rodape">
+				<span>&copy; 2019 - <strong>Matematicando</strong></span>
+			</div>
+		</footer>
+
+	</body>
+
+</html>
